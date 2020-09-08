@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'kitchen/provisioner/nodes_version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'kitchen-nodes'
+  spec.name          = 'kitchen-nodes-scalp42'
   spec.version       = Kitchen::Provisioner::NODES_VERSION
   spec.authors       = ['Matt Wrock']
   spec.email         = ['matt@mattwrock.com']
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'net-ping'
   spec.add_dependency 'win32-security'
-  spec.add_dependency 'test-kitchen', '~> 1.13'
+  spec.add_dependency 'test-kitchen'
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'fakefs', '~> 0.4'
